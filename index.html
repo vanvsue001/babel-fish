@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babel Fish</title>
+    <link
+    rel="shortcut icon"
+    href="https://raw.githubusercontent.com/vanvsue001/imageFavicon/main/fish_favicon.png"
+    type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="p-10 flex justify-center">
+        <div class="md:w-3/4 text-center">
+            <h1 class="text-[#ff4500] font-bold text-2xl">Babel Fish</h1>
+
+            <div class="outline outline-2 outline-gray-300 rounded mt-5 p-5">
+                <button 
+                    class="
+                        shadow
+                        bg-cyan-500
+                        #06B6D4
+                        hover:bg-cyan-400
+                        focus:shadow-outline focus:outline-none
+                        text-white
+                        font-bold
+                        py-2
+                        px-4
+                        rounded
+                        disabled:bg-blue-400
+                    "
+                    id="engBtn"
+                    lang = "english"
+                    onclick="testSpeech(event)"
+                >
+                Detect Speech (English)
+                </button>
+                <p 
+                    class="font-bold text-left pt-2"
+                    id="resultsEng"
+                >
+                    Results...
+                </p>
+
+            </div>
+
+            <div class="outline outline-2 outline-gray-300 rounded mt-5 p-5">
+                <button 
+                    class="
+                        shadow
+                        bg-cyan-500
+                        #06B6D4
+                        hover:bg-cyan-400
+                        focus:shadow-outline focus:outline-none
+                        text-white
+                        font-bold
+                        py-2
+                        px-4
+                        rounded
+                        disabled:bg-blue-400
+                    "
+                    id="spnBtn"
+                    lang="spanish"
+                    onclick="testSpeech(event)"
+                >
+                Detectar (habla español)
+                </button>
+
+                <p 
+                    class="font-bold text-left pt-2"
+                    id="resultsSpn"
+                >
+                Resultados...
+                </p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+    
+
+<script src="script.js"></script>
+</body>
+</html>
